@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs-user"></ion-back-button>
+    </ion-buttons>
+    <ion-icon class="shopping-cart-icon" slot="start" name="cart"></ion-icon>
+    <ion-title>Carrito de compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-title>Productos</ion-title>
+    <ion-text slot="end">Total: $1500</ion-text>
+  </ion-item>
+  <ion-list>
+    <ion-card (click)="goInfoProduct()">
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>
+<ion-footer transparent>
+  <button class="btn-add-product txt-bold">Continuar con la compra</button>
+</ion-footer>

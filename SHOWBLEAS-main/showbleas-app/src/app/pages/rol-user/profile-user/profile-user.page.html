@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning" (click)="goShoppingCart()">
+      <ion-icon name="cart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <div class="ctn-card-profile">
+    <ion-card class="card-profile">
+      <img class="icon-profile" src="../../../../assets/img/icono-perfil.png">
+      <div class="ptn-lvl-profile">
+        <ion-label>
+          <h2 class="txt-bold">Nivel 4</h2>
+          <h3>Puntos de nivel(320/1000)</h3>
+          <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+        </ion-label>
+      </div>
+
+      <div class="inf-pro">
+        <ion-label>
+          <h2 class="txt-bold">Nombre: {{ usuariodata.name }} {{ usuariodata.last_name }}</h2>
+          <h2>Email: {{ usuariodata.email }}</h2>
+          <h2>Telefono: {{ usuariodata.phone_number }}</h2>
+          <h2>Preferencia sabor: <b>{{ usuariodata.favorite_flavor }}</b></h2>
+        </ion-label>
+      </div>
+    </ion-card>
+  </div>
+  <section class="full-width">
+    <ion-button expand="full" color="secondary" (click)="doCloseSession()">Cerrar Sesión</ion-button>
+  </section>
+</ion-content>

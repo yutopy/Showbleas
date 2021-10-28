@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Crear Promoción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="container-create-product">
+    <ion-item>
+      <ion-label position="stacked">Tipo Producto</ion-label>
+      <ion-select okText="Aceptar" cancelText="Cancelar">
+        <ion-select-option value="oblea">Oblea</ion-select-option>
+        <ion-select-option value="vaso-de-helado">Vasos de helados</ion-select-option>
+        <ion-select-option value="postres">Postres</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nombre Producto</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Decripción</ion-label>
+      <ion-textarea rows="6" cols="20" type="text" placeholder="Descripción del producto" required></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Precio</ion-label>
+      <ion-input type="number" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Foto producto</ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="cnt-add-img">
+        <ion-icon class="img-photo" name="camera"></ion-icon>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="goPromotionsAdmin()">Cancelar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="warning" (click)="AddPromotion()">Añadir</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

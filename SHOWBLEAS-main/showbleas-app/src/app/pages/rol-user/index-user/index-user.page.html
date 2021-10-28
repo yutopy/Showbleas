@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio - Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning" (click)="goShoppingCart()">
+      <ion-icon name="cart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <img src="../../../../assets/img/oblea-inicio.png" alt="">
+  <ion-toolbar>
+    <ion-searchbar placeholder="Nombre Producto"></ion-searchbar>
+  </ion-toolbar>
+  <ion-item lines="none">
+    <ion-text class="txt-product">Productos</ion-text>
+    <ion-button slot="end" size="small" color="danger" (click)="goCreateWafer()">Arma tu oblea</ion-button>
+  </ion-item>
+
+  <!-- lista productos Obleas -->
+  <ion-item>
+    <ion-title>Obleas</ion-title>
+    <ion-button slot="end" fill="outline" size="small" color="danger" (click)="goAllWafers()">Ver todos</ion-button>
+  </ion-item>
+  <ion-list>
+    <ion-card (click)="goInfoProduct()">
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+
+  <!-- lista productos Vasos de helado -->
+  <ion-item>
+    <ion-title>Vasos de helado</ion-title>
+    <ion-button slot="end" fill="outline" size="small" color="danger" (click)="goAllIceCreamGlasses()">Ver todos</ion-button>
+  </ion-item>
+  <ion-list>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/Vaso-helado.png">
+        <ion-text class="title-procuct" slot="start">Vaso de Chocolate</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/Vaso-helado.png">
+        <ion-text class="title-procuct" slot="start">Vaso Ron Con Pasas</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+
+
+  <!-- lista productos Postres -->
+  <ion-item>
+    <ion-title>Postres</ion-title>
+    <ion-button slot="end" fill="outline" size="small" color="danger" (click)="goAllDesserts()">Ver todos</ion-button>
+  </ion-item>
+  <ion-list>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/postre.jpg">
+        <ion-text class="title-procuct" slot="start">Postre de Chocolate</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/postre.jpg">
+        <ion-text class="title-procuct" slot="start">Postre de melocoton</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+
+
+
+</ion-content>

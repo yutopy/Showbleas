@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs-admin/products-admin"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Información Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="container-create-product">
+    <ion-item>
+      <ion-label position="stacked">Tipo Producto</ion-label>
+      <ion-select value="oblea" okText="Aceptar" cancelText="Cancelar">
+        <ion-select-option value="oblea">Oblea</ion-select-option>
+        <ion-select-option value="vaso-de-helado">Vasos de helados</ion-select-option>
+        <ion-select-option value="postres">Postres</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Nombre Producto</ion-label>
+      <ion-input type="text" value="Oblea acaramelada"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Decripción</ion-label>
+      <ion-textarea rows="6" cols="20" type="text" placeholder="Descripción del producto" value="Oblea con arequipe y queso mozarela rayado"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Precio</ion-label>
+      <ion-input type="number" value="1.500"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Foto producto</ion-label>
+    </ion-item>
+    <ion-item>
+      <div class="cnt-add-img">
+        <img src="../../../../assets/img/oblea.png" alt="">
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="danger" (click)="deleteProduct()">Eliminar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="medium" (click)="goEditProduct()">Guardar cambios</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

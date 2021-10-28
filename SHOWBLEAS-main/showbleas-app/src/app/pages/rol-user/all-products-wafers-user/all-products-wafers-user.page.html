@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs-user"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Todos Productos Obleas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- lista productos Obleas -->
+  <ion-item>
+    <ion-title>Obleas</ion-title>
+  </ion-item>
+  <ion-list>
+    <ion-card (click)="goInfoProduct()">
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item class="content-product">
+        <img class="img-product" slot="start" src="../../../../assets/img/oblea.png">
+        <ion-text class="title-procuct" slot="start">Oblea de piña</ion-text>
+        <ion-label class="price-product" slot="end">$1500</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

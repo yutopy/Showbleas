@@ -1,0 +1,112 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" ></ion-back-button>       
+    </ion-buttons>
+    <ion-title>
+      Showbleas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="div">
+    <div class="mifuente">
+
+      <label>Resumen de compra: </label>
+        <ion-list>
+          <ion-item lines="none">
+            <ion-label class="subtitle">Nombre:</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+              <ion-item  lines="none">
+                <ion-label>Dirección de domicilio: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>Telefono: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-label>Detalles </ion-label>
+                <ion-checkbox slot="start" ></ion-checkbox>
+              </ion-item>
+            </ion-list>
+          </div>
+
+          <ion-slides pager="true" >
+            <ion-slide>
+                    <ion-card class="cardslide">
+                      <ion-grid>
+                        <ion-row >
+                          <ion-col size="8">
+
+                            <ion-card-header>
+    
+                              <ion-card-title>Pedido: </ion-card-title>
+                              <ion-card-subtitle> ITEM 1 con adicionales: </ion-card-subtitle>
+                              <ion-card-subtitle> ITEM 2 con adicionales: </ion-card-subtitle>
+                              <ion-card-subtitle> ITEM 3 con adicionales: </ion-card-subtitle>
+                            </ion-card-header>
+                          </ion-col>
+                          <ion-col size="4">
+                            <ion-card-title>Precio: </ion-card-title>
+                            <ion-card-subtitle> ... </ion-card-subtitle>
+                            <ion-card-subtitle> ... </ion-card-subtitle>
+                            <ion-card-subtitle> ... </ion-card-subtitle>
+                          </ion-col>
+
+                        </ion-row>
+                      </ion-grid>
+
+
+                    
+                    </ion-card>
+
+            </ion-slide>
+            <ion-slide>
+              <h1>Slide 2</h1>
+            </ion-slide>
+            <ion-slide>
+              <h1>Slide 3</h1>
+            </ion-slide>
+          </ion-slides>
+         
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-list>
+                    <ion-item lines="none">
+                      <ion-label>Descuentos/Promociones: </ion-label>
+                      <ion-input></ion-input>
+                    </ion-item>
+                    <ion-item  lines="none">
+                      <ion-label>Total a pagar: </ion-label>
+                      <ion-input></ion-input>
+                    </ion-item>
+                    <ion-item lines="none">
+                      <ion-label>Tiempo estimado de orden: </ion-label>
+                      <ion-input></ion-input>
+                    </ion-item>
+                  </ion-list>
+                </ion-col>
+                <ion-col>
+   
+                      <ion-item lines="none"> 
+                        <ion-label>Metodo de pago:</ion-label>
+                        <ion-select>
+                          <ion-select-option value="brown">Efectivo</ion-select-option>
+                          <ion-select-option value="blonde">Transferencia</ion-select-option>
+                          <ion-select-option value="black">Tarjeta</ion-select-option>
+                          <ion-select-option value="red">Bitcoin</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+
+                    <ion-button size="large">Generar factura</ion-button>
+                    <ion-button size="large">Enviar a chef</ion-button>
+               </ion-col>
+              </ion-row>
+            </ion-grid>
+
+ </div>
+</ion-content>
