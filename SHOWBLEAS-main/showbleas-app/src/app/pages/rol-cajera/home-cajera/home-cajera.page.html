@@ -1,9 +1,83 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>HomeCajera</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-row class = "row1">
+      <ion-col>
+        <ion-title>
+          Showbleas
+        </ion-title>
+      </ion-col>
+      <ion-col>
+        <ion-title class="mifuente2">
+          Fecha: <ion-label>{{actualDate}}</ion-label>
+        </ion-title> 
+      </ion-col>
+      <ion-col>
+        <ion-title class="mifuente2">
+          Hora - <ion-label>{{actualTime}}</ion-label>
+        </ion-title>  
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+      <ion-col class="col1">
+        
+          <ion-grid>
+            <ion-label class="mifuente1">
+              MODÚLO CAJERO -  BIENVENIDO
+            </ion-label>
+          </ion-grid>
+          
+          <ion-card>
+            <ion-grid>
+              <ion-label class="mifuente1">
+              Pedidos Virtuales
+              </ion-label>
+            </ion-grid>
+          </ion-card>
+         
+          <ion-card>
+            <ion-list>
+              <ion-item class="mifuente2" >
+                <ion-label class="ion-text-wrap">Nombre de cliente:</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item class="mifuente2" >
+                <ion-label>Numero: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item class="mifuente2" >
+                <ion-label class="ion-text-wrap">Direccion de residencia: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item class="mifuente2" >
+                <ion-label class="ion-text-wrap">Fecha de cumpleaños: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item class="mifuente2" >
+                <ion-label >Pedido a domicilio: </ion-label>
+                <ion-checkbox slot="end" [(ngModel)]="domicilio.domicilio"></ion-checkbox>
+              </ion-item>
+              <ion-item class="mifuente2" lines="none" *ngIf="domicilio.domicilio">
+                <ion-label>Direccion de residencia: </ion-label>
+                <ion-checkbox slot="end" [(ngModel)]="domicilio.residencia"></ion-checkbox>
+              </ion-item >
+              <ion-item  class="mifuente2" lines="none" *ngIf="!domicilio.residencia && domicilio.domicilio">
+                <ion-label class="ion-text-wrap">Nueva dirección: </ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item  lines="none">
+                <ion-button size="large" slot="end" (click)="ir()">siguiente</ion-button>
+              </ion-item>
+            </ion-list>
 
+          </ion-card>
+          
+         
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
