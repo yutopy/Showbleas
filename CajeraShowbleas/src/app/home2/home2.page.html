@@ -1,11 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="home" mode="md"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Showbleas
-    </ion-title>
+    <ion-row>
+      <ion-col>
+        <ion-title>
+          Showbleas
+        </ion-title>  
+      </ion-col>
+      <ion-col>
+        <ion-title class="mifuente2">
+          Fecha: <ion-label>{{actualDate}}</ion-label>
+        </ion-title>
+      </ion-col>
+      <ion-col>
+        <ion-title class = "mifuente2">
+          Hora - <ion-lablel>{{actualTime}}</ion-lablel>
+        </ion-title>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 

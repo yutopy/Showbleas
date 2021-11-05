@@ -6,10 +6,6 @@ ion-list{
   margin-bottom: 0.1%;
 }
 
-.titulo{
-  font-size: 20pt;
-
-}
 ion-card{
   position: fixed;
   margin-top: 1%;
@@ -43,6 +39,7 @@ ion-card{
     vertical-align: middle;
     justify-content: left;
   }
+
   .grid1{
     align-items: center;
     align-content: center;
@@ -58,6 +55,7 @@ ion-card{
      align-items: center!important;
      vertical-align: middle;
   }
+
   .col1{
     align-items: center;
     align-content: center;
@@ -73,3 +71,10 @@ ion-card{
     margin-top: 3%;
     margin-right: 3%;
   }
+
+  .titulo{
+    font-size: 20pt;
+  
+  }
+
+  

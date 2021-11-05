@@ -95,6 +95,11 @@ const routes: Routes = [
     path: 'create-promotion-admin',
     loadChildren: () => import('./pages/rol-admin/create-promotion-admin/create-promotion-admin.module').then( m => m.CreatePromotionAdminPageModule)
   },
+  {
+    path: 'home-cajera',
+    loadChildren: () => import('./pages/rol-cajera/home-cajera/home-cajera.module').then( m => m.HomeCajeraPageModule)
+  },
+  
   
 
 ];

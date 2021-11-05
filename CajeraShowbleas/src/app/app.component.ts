@@ -10,9 +10,4 @@ export class AppComponent {
   constructor() {}
 }
 
-export class HomePage{
-  currentDate;
-  constructor(public navCtrl: NavController){
-    this.currentDate = new Date();
-  }
-}
+

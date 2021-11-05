@@ -1,34 +1,49 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home" ></ion-back-button>       
+      <ion-back-button defaultHref="home2" ></ion-back-button>       
     </ion-buttons>
-    <ion-title>
-      Showbleas
-    </ion-title>
+    <ion-row>
+      <ion-col>
+        <ion-title>
+          Showbleas
+        </ion-title>  
+      </ion-col>
+      <ion-col>
+        <ion-title class="mifuente2">
+          Fecha: <ion-label>{{actualDate}}</ion-label>
+        </ion-title>
+      </ion-col>
+      <ion-col>
+        <ion-title class = "mifuente2">
+          Hora: <ion-lablel>{{actualTime}}</ion-lablel>
+        </ion-title>
+      </ion-col>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="div">
     <div class="mifuente">
-
-      <label>Resumen de compra: </label>
+      <ion-title class = "mifuente1">
+        <label> Resumen de compra: </label>
+      </ion-title>
         <ion-list>
-          <ion-item lines="none">
+          <ion-item class="mifuente2" lines="none">
             <ion-label class="subtitle">Nombre:</ion-label>
             <ion-input></ion-input>
           </ion-item>
-              <ion-item  lines="none">
-                <ion-label>Dirección de domicilio: </ion-label>
+              <ion-item class="mifuente2" lines="none">
+                <ion-label class="ion-text-wrap">Dirección de domicilio: </ion-label>
                 <ion-input></ion-input>
               </ion-item>
-              <ion-item lines="none">
-                <ion-label>Telefono: </ion-label>
+              <ion-item class="mifuente2" lines="none">
+                <ion-label> Telefono: </ion-label>
                 <ion-input></ion-input>
               </ion-item>
-              <ion-item lines="none">
-                <ion-label>Detalles </ion-label>
+              <ion-item class="mifuente2" lines="none">
+                <ion-label>Detalles</ion-label>
                 <ion-checkbox slot="start" ></ion-checkbox>
               </ion-item>
             </ion-list>
@@ -76,24 +91,24 @@
               <ion-row>
                 <ion-col>
                   <ion-list>
-                    <ion-item lines="none">
-                      <ion-label>Descuentos/Promociones: </ion-label>
+                    <ion-item class="mifuente2" lines="none">
+                      <ion-label class="ion-text-wrap">Descuentos/Promociones: </ion-label>
                       <ion-input></ion-input>
                     </ion-item>
-                    <ion-item  lines="none">
-                      <ion-label>Total a pagar: </ion-label>
+                    <ion-item class="mifuente2" lines="none">
+                      <ion-label class="ion-text-wrap">Total a pagar: </ion-label>
                       <ion-input></ion-input>
                     </ion-item>
-                    <ion-item lines="none">
-                      <ion-label>Tiempo estimado de orden: </ion-label>
+                    <ion-item class="mifuente2" lines="none">
+                      <ion-label class="ion-text-wrap">Tiempo estimado de orden: </ion-label>
                       <ion-input></ion-input>
                     </ion-item>
                   </ion-list>
                 </ion-col>
                 <ion-col>
    
-                      <ion-item lines="none"> 
-                        <ion-label>Metodo de pago:</ion-label>
+                      <ion-item class="mifuente2" lines="none"> 
+                        <ion-label class="ion-text-wrap">Metodo de pago:</ion-label>
                         <ion-select>
                           <ion-select-option value="brown">Efectivo</ion-select-option>
                           <ion-select-option value="blonde">Transferencia</ion-select-option>
