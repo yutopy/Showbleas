@@ -98,7 +98,11 @@ const routes: Routes = [
   {
     path: 'home-cajera',
     loadChildren: () => import('./pages/rol-cajera/home-cajera/home-cajera.module').then( m => m.HomeCajeraPageModule)
+  },  {
+    path: 'home-control',
+    loadChildren: () => import('./pages/machine-control/home-control/home-control.module').then( m => m.HomeControlPageModule)
   },
+
   
   
 
