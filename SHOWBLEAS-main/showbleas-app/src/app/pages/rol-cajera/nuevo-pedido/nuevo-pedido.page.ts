@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-nuevo-pedido',
+  templateUrl: './nuevo-pedido.page.html',
+  styleUrls: ['./nuevo-pedido.page.scss'],
 })
+export class NuevoPedidoPage implements OnInit {
 
-export class HomePage {
-  
   actualDate;
   actualTime;
   domicilio={domicilio:false,residencia:true,otra:''}
-  
-  constructor(private nav:NavController) {
+
+  constructor(private nav:NavController) { 
     this.getActualDate()
-    this.getActualTime()
-  }   
-  
+    this.getActualTime() 
+  }
+
+  ngOnInit() {
+  }
+
   getActualDate(){
     var dateObj = new Date()
     var year = dateObj.getFullYear().toString()
@@ -34,7 +36,6 @@ export class HomePage {
   } 
 
   ir(){
-  this.nav.navigateForward('home2')
+  this.nav.navigateForward('registro-pedido')
   }
 }
-

@@ -2,26 +2,26 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home-cajera',
-  templateUrl: './home-cajera.page.html',
-  styleUrls: ['./home-cajera.page.scss'],
+  selector: 'app-registro-pedido',
+  templateUrl: './registro-pedido.page.html',
+  styleUrls: ['./registro-pedido.page.scss'],
 })
-export class HomeCajeraPage implements OnInit {
+export class RegistroPedidoPage implements OnInit {
 
   actualDate;
   actualTime;
-  domicilio={domicilio:false,residencia:true,otra:''}
   constructor(private nav:NavController) {
     this.getActualDate()
     this.getActualTime()
    }
+   entry=[false,false,false,false];
 
-   getActualDate(){
+  getActualDate(){
     var dateObj = new Date()
-    var year = dateObj.getFullYear().toString()
+    var year = dateObj.getFullYear().toString() 
     var month = dateObj.getMonth().toString()
-    var date = dateObj.getDate().toString()
-    this.actualDate = year + '/' + month + '/' + date;
+    var day = dateObj.getDay().toString()
+    this.actualDate =  year + '/' + month + '/' + day
   }
 
   getActualTime(){
@@ -29,25 +29,13 @@ export class HomeCajeraPage implements OnInit {
     var hour = dateObj.getHours().toString()
     var min = dateObj.getMinutes().toString()
     this.actualTime = hour + ":" + min;
-  }
+  } 
 
   ngOnInit() {
   }
-
+  
   ir(){
-    this.nav.navigateForward('nuevo-pedido')
-    }
+    this.nav.navigateForward('resumen-pedido');
+  }
 
 }
-
-
-
-
-
-
-
-  
-
-   
-
-  

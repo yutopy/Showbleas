@@ -34,6 +34,7 @@ export class Home2Page implements OnInit {
   
   ngOnInit() {
   }
+  
   ir(){
     this.nav.navigateForward('home3');
   }

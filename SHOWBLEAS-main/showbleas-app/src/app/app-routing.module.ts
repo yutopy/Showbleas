@@ -98,7 +98,19 @@ const routes: Routes = [
   {
     path: 'home-cajera',
     loadChildren: () => import('./pages/rol-cajera/home-cajera/home-cajera.module').then( m => m.HomeCajeraPageModule)
+  },  {
+    path: 'nuevo-pedido',
+    loadChildren: () => import('./pages/rol-cajera/nuevo-pedido/nuevo-pedido.module').then( m => m.NuevoPedidoPageModule)
   },
+  {
+    path: 'registro-pedido',
+    loadChildren: () => import('./pages/rol-cajera/registro-pedido/registro-pedido.module').then( m => m.RegistroPedidoPageModule)
+  },
+  {
+    path: 'resumen-pedido',
+    loadChildren: () => import('./pages/rol-cajera/resumen-pedido/resumen-pedido.module').then( m => m.ResumenPedidoPageModule)
+  },
+
   
   
 

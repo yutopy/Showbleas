@@ -2,18 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-home3',
-  templateUrl: './home3.page.html',
-  styleUrls: ['./home3.page.scss'],
+  selector: 'app-resumen-pedido',
+  templateUrl: './resumen-pedido.page.html',
+  styleUrls: ['./resumen-pedido.page.scss'],
 })
+export class ResumenPedidoPage implements OnInit {
 
-export class Home3Page implements OnInit {
   actualDate;
   actualTime;
-  constructor(private nav:NavController) {
+
+  constructor(private nav:NavController) { 
     this.getActualDate()
     this.getActualTime()
-   }
+  }
 
   getActualDate(){
     var dateObj = new Date()
@@ -29,7 +30,6 @@ export class Home3Page implements OnInit {
     var minute = dateObj.getMinutes().toString()
     this.actualTime = hour + ":" + minute
   }
-
 
   ngOnInit() {
   }
