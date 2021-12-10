@@ -2,20 +2,12 @@ ion-slides {
     height: 30%;
     width: 100%;
   }
+  
   ion-card{
   border-radius: 15px;
   margin-bottom: 10%;
   }
   
-  .cardprincipal{
-    position: fixed;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-    border-radius: 15px;
-    width: 90%;
-  }
-
   ion-grid{
     align-items: center;
     align-content: center;
@@ -31,6 +23,7 @@ ion-slides {
      align-items: center!important;
      vertical-align: middle;
   }
+  
   ion-col{
     align-items: center;
     align-content: center;
@@ -48,8 +41,9 @@ ion-slides {
   
   div{
     width: 100%;
-    padding-left: 8%;
+    padding-left: 4%;
     text-align: left;
+    padding-top: 1%; 
     align-items: left;
     align-content: left;
   }
@@ -58,7 +52,6 @@ ion-slides {
     text-align: left;
     align-items: left;
     align-content: left;
-
   }
 
   .titulo2{

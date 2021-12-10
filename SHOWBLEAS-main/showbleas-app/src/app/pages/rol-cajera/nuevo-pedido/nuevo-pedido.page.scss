@@ -1,14 +1,13 @@
 ion-content{
 align-items: center;
 }
+
 ion-list{
 margin-top: 1%;
 margin-bottom: 0.1%;
 }
 
- 
 ion-card{
-  position: fixed;
   margin-top: 1%;
   padding-left: 5%;
   padding-right: 5%;
@@ -43,27 +42,22 @@ ion-col{
   justify-content: left;
 } 
     
-.grid1{
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
-.row1{
-  height: 100%;
-  justify-content: center;
-  display: flex!important;
-   align-items: center!important;
-   vertical-align: middle;
-}
     
 .col1{
   align-items: center;
   align-content: center;
   text-align: center;
   justify-content: center;
+}
+
+div{
+  width: 100%;
+  padding-left: 4%;
+  padding-top: 1%; 
+  text-align: left;
+  align-items: left;
+  align-content: left;
 }
 
 .fecha{
